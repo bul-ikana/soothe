@@ -10,9 +10,11 @@ And this noise, is always coming back. We think we go through it with a purpose,
 
 ## 
 
-This game was inspired by, and submitted to the following game jams:
+This piece of digital interaction was inspired by, and submitted to the following game jams:
 
 * [Iyashikei / healing jam](https://itch.io/jam/healing-jam)
 * [PERMADEATH RADIO (Spektrum Crush zine)](https://itch.io/jam/permadeathradio)
 
-The game was developed using [Construct2](https://www.scirra.com/construct2)
+You can test it in [Github pages](https://bul-ikana.github.io/soothe/) and [itch.io](https://bul-ikana.itch.io/soothe)
+
+Developed using [Construct2](https://www.scirra.com/construct2)
