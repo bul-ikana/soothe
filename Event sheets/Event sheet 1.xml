@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="active" sid="293281527802460" static="0" type="number">900</variable>
+        <event-block sid="972554409672449">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="846720365228181" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="606471601117569" type="Sprite">
+                    <param id="0" name="Instance variable">color</param>
+                    <param id="1" name="Value">int(random(2))</param>
+                </action>
+                <action id="0" name="Play" sid="787789986503260" type="Audio">
+                    <param id="0" name="Audio file">static</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;static&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="814054584854266" type="Audio">
+                    <param id="0" name="Audio file">vapor</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-40</param>
+                    <param id="1" name="Tag (optional)">&quot;vapor&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="669305628080823">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="504125106569966" type="Sprite">
+                            <param id="0" name="Instance variable">color</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="253237146723153" type="Sprite">
+                            <param id="0" name="Animation">&quot;orange&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="614892279438304">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="366514685166150" type="Sprite">
+                            <param id="0" name="Instance variable">color</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="836184976599506" type="Sprite">
+                            <param id="0" name="Animation">&quot;purple&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="331608552064791">
+                    <conditions />
+                    <actions>
+                        <action id="6" name="Set speed" sid="544401728327211" type="Sprite">
+                            <param id="0" name="Speed">random(0.1, 1)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="207482250644236" type="Sprite">
+                            <param id="0" name="Frame number">int(random(5))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="906268775822830">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="102004280483467" type="Mouse">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="431631830290857" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="283212629351902" type="Sprite">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="431495685597833" type="System">
+                    <param id="0" name="Variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="207060761168328" type="Function">
+                    <param id="0" name="Name">&quot;calculate&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="624110669620992">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796683888051832" type="System">
+                            <param id="0" name="Variable">active</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="253978450399371" type="Audio">
+                            <param id="0" name="Tag">&quot;static&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="396591174637611">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="444549409858854" type="System">
+                            <param id="0" name="Seconds">random(120, 1140)</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="537934678852615" type="Sprite">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="578321416593103" type="System">
+                            <param id="0" name="Variable">active</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="586922448596910" type="Audio">
+                            <param id="0" name="Tag">&quot;static&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="788722222104632" type="Function">
+                            <param id="0" name="Name">&quot;calculate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="731037012309404">
+            <conditions>
+                <condition id="0" name="On function" sid="414677479212169" type="Function">
+                    <param id="0" name="Name">&quot;calculate&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set volume" sid="145017343940873" type="Audio">
+                    <param id="0" name="Tag">&quot;static&quot;</param>
+                    <param id="1" name="dB">0 - floor(((900 - active)/900) * 31)</param>
+                </action>
+                <action id="3" name="Set volume" sid="484708539521832" type="Audio">
+                    <param id="0" name="Tag">&quot;vapor&quot;</param>
+                    <param id="1" name="dB">0 - floor(((active)/900) * 40) - 7</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

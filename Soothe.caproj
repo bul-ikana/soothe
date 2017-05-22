@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Soothe</name>
+    <description>Soothe</description>
+    <version>0.0.0.1</version>
+    <author>Hugo Aguirre</author>
+    <author-email>hugo.agmtz@gmail.com</author-email>
+    <author-website></author-website>
+    <app-id>bul.ikana.soothe</app-id>
+    <unique-id>20y7provq9den</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">Yes</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="754436580800245">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="color" sid="305844012678626" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="orange" pingpong="0" repeatcount="1" repeatto="0" sid="538989672163168" speed="0.5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+                <animation framecount="4" loop="1" name="purple" pingpong="0" repeatcount="1" repeatto="0" sid="553818244420010" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+                <animation framecount="1" loop="1" name="gray" pingpong="0" repeatcount="1" repeatto="0" sid="149984160916597" speed="0.05">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                </animation>
+                <animation framecount="1" loop="1" name="pink" pingpong="0" repeatcount="1" repeatto="0" sid="600738593099417" speed="0.05">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="F:\Downloads\tiles.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="403466257310053">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="649217257899418">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Tilemap" sid="623185096901555">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Audio" sid="802922221740417">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Function" sid="792347766766986">
+            <plugin id="Function" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="0">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="901" />
+        <global-instance type="Audio" uid="904">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="908" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="static.ogg" />
+        <file name="vapor.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
