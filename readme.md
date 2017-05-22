@@ -1,6 +1,6 @@
 # Soothe
 
-![](Docs/i1.png)
+![](docs/i1.png)
 
 This is our digital life. 
 
